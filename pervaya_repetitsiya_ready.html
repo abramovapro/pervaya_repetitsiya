@@ -738,6 +738,17 @@
       margin-bottom: 32px;
     }
   }
+  
+  /* ABOUT section mobile fix */
+  @media (max-width: 640px) {
+    .about-section {
+      padding: 60px 20px !important;
+    }
+    .about-grid {
+      grid-template-columns: 1fr !important;
+      gap: 32px !important;
+    }
+  }
   </style>
 </head>
 <body>
@@ -760,12 +771,12 @@
 </section>
 
 <!-- ABOUT -->
-<section style="padding: 100px 24px; max-width: 800px; margin: 0 auto;">
+<section class="about-section" style="padding: 100px 24px; max-width: 800px; margin: 0 auto;">
   <div style="font-size:10px; letter-spacing:0.3em; text-transform:uppercase; color:var(--accent); font-weight:400; margin-bottom:48px; display:flex; align-items:center; gap:16px;">
     Кто за этим стоит
     <span style="flex:1; height:1px; background:rgba(124,92,191,0.18); display:block;"></span>
   </div>
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start;">
+  <div class="about-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start;">
     <div>
       <p style="font-family:'Cormorant Garamond',serif; font-size:clamp(28px,4vw,40px); font-weight:300; line-height:1.25; color:var(--ink); margin-bottom:32px;">Полгода назад я ушла с работы,<br><em style="font-style:italic; color:var(--accent);">о которой многие мечтают.</em></p>
       <p style="font-size:15px; font-weight:300; line-height:1.9; color:var(--ink2); margin-bottom:20px;">4 года я была правой рукой эксперта в крупном инфобизнесе. Знала, как она говорит, как строит продукты, что работает в запусках, а что — нет. Я забрала на себя всё: маркетинг, продакшн, продажи, команду. Средняя выручка — <strong style="color:var(--ink); font-weight:500;">30 миллионов в месяц.</strong></p>
