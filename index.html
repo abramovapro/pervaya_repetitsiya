@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -633,7 +633,112 @@
     .step { grid-template-columns: 56px 1fr; }
     .step-num { font-size: 36px; }
   }
-</style>
+  /* ═══════════════════════════════
+     MOBILE ADAPTATION ≤ 640px
+  ═══════════════════════════════ */
+  @media (max-width: 640px) {
+
+    /* HERO */
+    .hero {
+      padding: 80px 20px 50px;
+      min-height: 100svh;
+    }
+
+    .hero-photo {
+      width: 120px !important;
+      height: 120px !important;
+    }
+
+    /* PAIN */
+    .pain {
+      padding: 64px 20px;
+    }
+
+    .pain-item {
+      gap: 14px;
+      padding: 20px 0;
+    }
+
+    /* WHAT */
+    .what {
+      padding: 64px 20px;
+    }
+
+    .what::before {
+      display: none;
+    }
+
+    .quote-block {
+      padding: 16px 20px;
+      margin: 32px 0;
+    }
+
+    /* GETS */
+    .gets {
+      padding: 64px 20px;
+    }
+
+    .gets-grid {
+      grid-template-columns: 1fr;
+      margin-top: 32px;
+    }
+
+    .get-card {
+      padding: 28px 24px;
+    }
+
+    .get-card.accent-card {
+      grid-column: span 1;
+    }
+
+    /* PRICE */
+    .price-section {
+      padding: 64px 20px;
+    }
+
+    .price-section::before {
+      display: none;
+    }
+
+    .price-includes {
+      padding: 24px 20px;
+    }
+
+    .cta-btn {
+      width: 100%;
+      text-align: center;
+      padding: 18px 24px;
+    }
+
+    /* HOW */
+    .how {
+      padding: 64px 20px;
+    }
+
+    .step {
+      grid-template-columns: 56px 1fr;
+      padding: 28px 0;
+    }
+
+    .step-num {
+      font-size: 36px;
+    }
+
+    /* FOR WHOM */
+    .forwhom {
+      padding: 64px 20px;
+    }
+
+    .forwhom-grid {
+      grid-template-columns: 1fr !important;
+    }
+
+    /* SECTION LABEL */
+    .section-label {
+      margin-bottom: 32px;
+    }
+  }
+  </style>
 </head>
 <body>
 
